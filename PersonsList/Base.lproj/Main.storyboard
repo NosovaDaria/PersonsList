@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g3v-ah-ABm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1bh-RM-KcM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -33,6 +33,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="vke-uE-j9T" kind="show" id="EWN-Cj-xD8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -45,7 +48,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ka-dW-4s2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="49"/>
+            <point key="canvasLocation" x="406" y="56"/>
         </scene>
         <!--Item-->
         <scene sceneID="oTp-fB-EwS">
@@ -60,46 +63,112 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="1bh-RM-KcM" kind="relationship" relationship="rootViewController" id="oHb-Co-hBh"/>
+                        <segue destination="zJn-0U-TlE" kind="relationship" relationship="rootViewController" id="aBq-QL-SqJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dco-uE-LPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1491" y="49"/>
+            <point key="canvasLocation" x="-380" y="56"/>
         </scene>
-        <!--View Controller-->
+        <!--Chosen Person View Controller-->
         <scene sceneID="o2g-6c-NlY">
             <objects>
-                <viewController id="vke-uE-j9T" sceneMemberID="viewController">
+                <viewController id="vke-uE-j9T" customClass="ChosenPersonViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GcT-8b-ddB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xsr-Po-ZU8">
+                                <rect key="frame" x="20" y="113" width="124" height="67"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="7t6-kW-4pA">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="67"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg0-Ea-ng8">
+                                                <rect key="frame" x="0.0" y="0.0" width="61" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOq-Jk-lyX">
+                                                <rect key="frame" x="0.0" y="43" width="61" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="2qX-Rx-IAI">
+                                        <rect key="frame" x="76" y="0.0" width="48" height="67"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aP-qU-ZXX">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8a-jq-36L">
+                                                <rect key="frame" x="0.0" y="42" width="48" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0f0-Z1-bEi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JSP-xK-tcA"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="s8a-jq-36L" id="ecE-Nx-stm"/>
+                        <outlet property="phoneNumberLabel" destination="7aP-qU-ZXX" id="D7a-lr-xg6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLw-Dt-nA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="49"/>
+            <point key="canvasLocation" x="1187" y="56"/>
         </scene>
         <!--Persons Tab Bar View Controller-->
         <scene sceneID="SFu-LI-mFu">
             <objects>
                 <tabBarController id="1bh-RM-KcM" customClass="PersonsTabBarViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ckL-4y-4tq"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UPh-nH-GU5">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="person.crop.circle" catalog="system" id="UPh-nH-GU5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zJn-0U-TlE" kind="relationship" relationship="viewControllers" id="dyA-tu-voa"/>
-                        <segue destination="nM4-Zp-2OD" kind="relationship" relationship="viewControllers" id="gyN-a7-W53"/>
+                        <segue destination="g3v-ah-ABm" kind="relationship" relationship="viewControllers" id="B4O-6L-9vr"/>
+                        <segue destination="i7z-YN-HXT" kind="relationship" relationship="viewControllers" id="vfV-nq-Cvp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRq-Gb-tSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-693" y="49"/>
+            <point key="canvasLocation" x="-1294" y="56"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="29k-Oe-dxl">
+            <objects>
+                <navigationController id="i7z-YN-HXT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ePy-Jf-h7F"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="adI-rT-xGJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nM4-Zp-2OD" kind="relationship" relationship="rootViewController" id="l3u-d2-PU9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYY-Jc-BX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1294" y="801"/>
         </scene>
         <!--Persons List-->
         <scene sceneID="pfC-WQ-Nam">
@@ -145,10 +214,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZz-We-pCD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-694" y="802"/>
+            <point key="canvasLocation" x="-381" y="801"/>
         </scene>
     </scenes>
     <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

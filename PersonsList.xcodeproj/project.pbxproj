@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3C023C277D30F700F97C26 /* ChosenPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3C023B277D30F700F97C26 /* ChosenPersonViewController.swift */; };
 		4B9038CD277CB7F000653FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9038CC277CB7F000653FDD /* AppDelegate.swift */; };
 		4B9038CF277CB7F000653FDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9038CE277CB7F000653FDD /* SceneDelegate.swift */; };
 		4B9038D4277CB7F000653FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9038D2277CB7F000653FDD /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B3C023B277D30F700F97C26 /* ChosenPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenPersonViewController.swift; sourceTree = "<group>"; };
 		4B9038C9277CB7F000653FDD /* PersonsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9038CC277CB7F000653FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B9038CE277CB7F000653FDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +30,7 @@
 		4B9038D8277CB7F100653FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B9038DA277CB7F100653FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B9038E0277CC01900653FDD /* DataManager.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; tabWidth = 4; };
-		4B9038E2277CC6D200653FDD /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		4B9038E2277CC6D200653FDD /* PersonsListViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		4B9038E4277CC80700653FDD /* PersonsInfoViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = PersonsInfoViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		4B9038EC277CCDDA00653FDD /* PersonsTabBarViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = PersonsTabBarViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		4B9038EE277CCF4600653FDD /* Person.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; tabWidth = 4; };
@@ -69,6 +71,7 @@
 				4B9038EC277CCDDA00653FDD /* PersonsTabBarViewController.swift */,
 				4B9038E2277CC6D200653FDD /* PersonsListViewController.swift */,
 				4B9038E4277CC80700653FDD /* PersonsInfoViewController.swift */,
+				4B3C023B277D30F700F97C26 /* ChosenPersonViewController.swift */,
 				4B9038D2277CB7F000653FDD /* Main.storyboard */,
 				4B9038EE277CCF4600653FDD /* Person.swift */,
 				4B9038E0277CC01900653FDD /* DataManager.swift */,
@@ -152,6 +155,7 @@
 			files = (
 				4B9038CD277CB7F000653FDD /* AppDelegate.swift in Sources */,
 				4B9038E1277CC01900653FDD /* DataManager.swift in Sources */,
+				4B3C023C277D30F700F97C26 /* ChosenPersonViewController.swift in Sources */,
 				4B9038E5277CC80700653FDD /* PersonsInfoViewController.swift in Sources */,
 				4B9038CF277CB7F000653FDD /* SceneDelegate.swift in Sources */,
 				4B9038EF277CCF4600653FDD /* Person.swift in Sources */,
