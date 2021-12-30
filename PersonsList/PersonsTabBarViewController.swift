@@ -18,15 +18,15 @@ class PersonsTabBarViewController: UITabBarController {
     }
     
     private func passPersons() {
+        let tabBarController = self.tabBarController
         guard let viewControllers = tabBarController?.viewControllers else { return }
-        viewControllers.forEach {
-            if let navigationVC = $0 as? UINavigationController {
-                let personsListVC = navigationVC.topViewController as! PersonsListViewController
+
+        for viewController in viewControllers {
+            if let personsListVC = viewController as? PersonsListViewController {
                 personsListVC.persons = persons
+            } else if let personsInfoVC = viewController as? PersonsInfoViewController{
+                personsInfoVC.persons = persons
             }
         }
-        
     }
-        
-    
 }
