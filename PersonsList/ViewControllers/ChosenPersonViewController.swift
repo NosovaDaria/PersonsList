@@ -11,12 +11,14 @@ class ChosenPersonViewController: UIViewController {
   @IBOutlet var phoneNumberLabel: UILabel!
   @IBOutlet var emailLabel: UILabel!
   
-  var persons: [Person]!
+  var person: Person!
+  
   override func viewDidLoad() {
-      super.viewDidLoad()
-
-//    phoneNumberLabel.text = persons.phone
-//    emailLabel.text = persons.email
+    super.viewDidLoad()
+    
+    title = person.fullname
+    phoneNumberLabel.text = person.phone
+    emailLabel.text = person.email
     }
     
 

@@ -9,7 +9,6 @@ import Foundation
 
 struct Person {
     
-    
     let name: String
     let surname: String
     let email: String
@@ -26,7 +25,9 @@ extension Person {
         let surnames = DataManager.shared.surnames.shuffled()
         let emails = DataManager.shared.emails.shuffled()
         let phones = DataManager.shared.phones.shuffled()
+        
         var persons: [Person] = [];
+        
         for (index, _) in names.enumerated() {
             persons.append(Person(name: names[index], surname: surnames[index], email: emails[index], phone: phones[index]))
         }
@@ -34,3 +35,7 @@ extension Person {
     }
 }
 
+enum Contacts: String {
+    case phone = "phone"
+    case email = "email"
+}

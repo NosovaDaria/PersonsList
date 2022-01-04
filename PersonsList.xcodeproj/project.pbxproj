@@ -47,6 +47,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1639B82784F546007DEDC0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B9038EC277CCDDA00653FDD /* PersonsTabBarViewController.swift */,
+				4B9038E2277CC6D200653FDD /* PersonsListViewController.swift */,
+				4B9038E4277CC80700653FDD /* PersonsInfoViewController.swift */,
+				4B3C023B277D30F700F97C26 /* ChosenPersonViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4B1639B92784F61F007DEDC0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				4B9038D2277CB7F000653FDD /* Main.storyboard */,
+				4B9038D7277CB7F100653FDD /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		4B1639BA2784F694007DEDC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B9038EE277CCF4600653FDD /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B1639BB2784F6B9007DEDC0 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4B9038CC277CB7F000653FDD /* AppDelegate.swift */,
+				4B9038CE277CB7F000653FDD /* SceneDelegate.swift */,
+				4B9038DA277CB7F100653FDD /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4B1639BC2784F6DD007DEDC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B9038D5277CB7F100653FDD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B1639BD2784F701007DEDC0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B9038E0277CC01900653FDD /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4B9038C0277CB7F000653FDD = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +120,12 @@
 		4B9038CB277CB7F000653FDD /* PersonsList */ = {
 			isa = PBXGroup;
 			children = (
-				4B9038CC277CB7F000653FDD /* AppDelegate.swift */,
-				4B9038CE277CB7F000653FDD /* SceneDelegate.swift */,
-				4B9038EC277CCDDA00653FDD /* PersonsTabBarViewController.swift */,
-				4B9038E2277CC6D200653FDD /* PersonsListViewController.swift */,
-				4B9038E4277CC80700653FDD /* PersonsInfoViewController.swift */,
-				4B3C023B277D30F700F97C26 /* ChosenPersonViewController.swift */,
-				4B9038D2277CB7F000653FDD /* Main.storyboard */,
-				4B9038EE277CCF4600653FDD /* Person.swift */,
-				4B9038E0277CC01900653FDD /* DataManager.swift */,
-				4B9038D5277CB7F100653FDD /* Assets.xcassets */,
-				4B9038D7277CB7F100653FDD /* LaunchScreen.storyboard */,
-				4B9038DA277CB7F100653FDD /* Info.plist */,
+				4B1639BB2784F6B9007DEDC0 /* SupportFiles */,
+				4B1639B82784F546007DEDC0 /* ViewControllers */,
+				4B1639B92784F61F007DEDC0 /* StoryBoards */,
+				4B1639BA2784F694007DEDC0 /* Models */,
+				4B1639BC2784F6DD007DEDC0 /* Resources */,
+				4B1639BD2784F701007DEDC0 /* Services */,
 			);
 			path = PersonsList;
 			sourceTree = "<group>";
@@ -311,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D3Z57ZF4U3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonsList/Info.plist;
+				INFOPLIST_FILE = PersonsList/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,7 +387,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D3Z57ZF4U3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonsList/Info.plist;
+				INFOPLIST_FILE = PersonsList/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

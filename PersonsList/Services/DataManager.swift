@@ -15,7 +15,7 @@ class DataManager {
     ]
     
     let surnames = [
-        "Srark", "Targaryen", "Lanister",
+        "Stark", "Targaryen", "Lanister",
         "Parker", "Osborn", "Octavius",
         "Dillon", "Connors", "Leeds", "Marko"
     ]
